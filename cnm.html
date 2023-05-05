@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gary_818 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=cWWGwYVqsIvcG6av6PLh1jDORD_SdIgEn9OZtb53ic0" />
+    
+
+    
+        
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/rui-4825/custom.css?v=/4CBZtbFTDuE047VofBABYgqOAs=" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/css/mobile-common.min.css?v=ZBWq3OPQpKdP7jvC_UMCkC1a79tQGcXLPZwlftZaLVg" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/rui-4825/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/rui-4825/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/rui-4825/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 521865;
+        var currentBlogApp = 'rui-4825';
+        var isLogined = true;
+        var isBlogOwner = true;
+        var skinName = 'Custom';
+        var visitorUserId = '4a1182a0-4a26-4e94-7dbe-08d6f0c88f25';
+        var hasCustomScript = true;
+        try {
+            if (hasCustomScript && document.referrer && document.referrer.indexOf('baidu.com') >= 0) {
+                Object.defineProperty(document, 'referrer', { value: '' });
+                Object.defineProperty(Document.prototype, 'referrer', { get: function () { return ''; } });
+            }
+        } catch (error) { }
+        window.cb_enable_mathjax = true;
+        window.mathEngine = 0;
+        window.codeHighlightEngine = 1;
+        window.enableCodeLineNumber = false;
+        window.codeHighlightTheme = 'cnblogs';
+        window.darkModeCodeHighlightTheme = 'vs2015';
+        window.isDarkCodeHighlightTheme = false;
+        window.isDarkModeCodeHighlightThemeDark = true;
+        window.isDisableCodeHighlighter = false;
+        window.enableCodeThemeTypeFollowSystem = false;
+        window.enableMacStyleCodeBlock = false
+    </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=AijlRF3Rn0BJXj14lSGCwYIez44WlACwRQDtNOAtH9w"></script>
+    
+
+    
+</head>
+<body class="skin-custom no-navbar mathjax2">
+    <a name="top"></a>
+    <div id="top_nav" class="navbar forpc navbar-custom">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+                <li class="navbar-branding">
+                    <a href="https://www.cnblogs.com/" title="开发者的网上家园" role="banner">
+                            <img src="//common.cnblogs.com/logo.svg" alt="博客园Logo" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" onclick="countClicks('skin-navbar-sitehome')">首页</a>
+                </li>
+                <li>
+                    <a href="https://news.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-news')">新闻</a>
+                </li>
+                <li>
+                    <a href="https://q.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-q')">博问</a>
+                </li>
+                    <li>
+                        <a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-brands')">专区</a>
+                    </li>
+                <li>
+                    <a href="https://ing.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-ing')">闪存</a>
+                </li>
+                <li>
+                    <a href="https://edu.cnblogs.com/" onclick="countClicks('nav', 'skin-navbar-edu')">班级</a>
+                </li>
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                <li>
+                    <form id="zzk_search" class="navbar-search dropdown" action="https://zzk.cnblogs.com/s" method="get" role="search">
+                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="search" tabindex="3" autocomplete="off" />
+                        <button id="zzk_search_button" onclick="window.navbarSearchManager.triggerActiveOption()">
+                            <img id="search_icon" class="focus-hidden" src="//common.cnblogs.com/images/blog/search.svg" alt="搜索" />
+                            <img class="hidden focus-visible" src="/images/enter.svg" alt="搜索" />
+                        </button>
+                        <ul id="navbar_search_options" class="dropdown-menu quick-search-menu">
+                            <li tabindex="0" class="active" onclick="zzkSearch(event, document.getElementById('zzk_search_input').value)">
+                                <div class="keyword-wrapper">
+                                    <img src="//common.cnblogs.com/images/blog/search.svg" alt="搜索" />
+                                    <div class="keyword"></div>
+                                </div>
+                                <span class="search-area">所有博客</span>
+                            </li>
+                                    <li tabindex="2" onclick="zzkBlogSearch(event, 'rui-4825', document.getElementById('zzk_search_input').value)">
+                                        <div class="keyword-wrapper">
+                                            <img src="//common.cnblogs.com/images/blog/search.svg" alt="搜索" />
+                                            <div class="keyword"></div>
+                                        </div>
+                                        <span class="search-area">我的博客</span>
+                                    </li>
+                        </ul>
+                    </form>
+                </li>
+                <li id="navbar_login_status" class="navbar-list">
+                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
+                        <img id="new_post_icon" class="navbar-icon" src="//common.cnblogs.com/images/blog/newpost.svg" alt="写随笔" />
+                    </a>
+                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
+                        <img id="myblog_icon" class="navbar-icon" src="//common.cnblogs.com/images/blog/myblog.svg" alt="我的博客" />
+                    </a>
+                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
+                        <img id="msg_icon" class="navbar-icon" src="//common.cnblogs.com/images/blog/message.svg" alt="短消息" />
+                        <span id="msg_count" style="display: none"></span>
+                    </a>
+                    <a id="navbar_lite_mode_indicator" data-current-page="blog" style="display: none" href="javascript:void(0)" alt="简洁模式" title="简洁模式启用，您在访问他人博客时会使用简洁款皮肤展示">
+                        <img class="navbar-icon" src="//common.cnblogs.com/images/blog/lite-mode-on.svg" alt="简洁模式" />
+                    </a>
+                    <div id="user_info" class="navbar-user-info dropdown">
+                        <a class="dropdown-button" href="https://home.cnblogs.com/">
+                            <img id="user_icon" class="navbar-avatar" src="//common.cnblogs.com/images/blog/avatar-default.svg" alt="用户头像" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
+                            <a href="https://home.cnblogs.com/">我的园子</a>
+                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
+                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
+    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
+</a>
+                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
+                        </div>
+                    </div>
+                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup">注册</a>
+                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="page_begin_html">
+        <div class="light-loading">
+  <div class="box">
+    <h2>Loading</h2>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+    </div>
+
+    <!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/rui-4825/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/rui-4825/"><font style="font-family: Purisa"> Gary_818 </font></a>
+</h1>
+<h2></h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/rui-4825/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Gary_818">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/rui-4825/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			<div id="blog_stats_place_holder"><script>loadBlogStats();</script></div>
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+
+
+
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_14091244">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/12/05.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/14091244.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        NOIp2020AFO记
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14091244">
+摘要：            
+未来可期~        <a href="https://www.cnblogs.com/rui-4825/p/14091244.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-12-05 21:36
+Gary_818
+<span data-post-id="14091244" class="post-view-count">阅读(222)</span> 
+<span data-post-id="14091244" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14091244" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14091244" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13951925">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/10.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/Diary_11.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        Diary（2020十一月 NOIP赛前集训） 
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13951925">
+摘要：            
+$\Huge 0$        <a href="https://www.cnblogs.com/rui-4825/p/Diary_11.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-10 06:13
+Gary_818
+<span data-post-id="13951925" class="post-view-count">阅读(217)</span> 
+<span data-post-id="13951925" class="post-comment-count">评论(12)</span> 
+<span data-post-id="13951925" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13951925" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13831778">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/10/17.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/13831778.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        我们的Gary真的是太强辣
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13831778">
+摘要：            
+<img src="https://images.cnblogs.com/cnblogs_com/rui-4825/1815157/o_2007272315457.bmp" class="desc_img">共勉～        <a href="https://www.cnblogs.com/rui-4825/p/13831778.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-10-17 17:00
+Gary_818
+<span data-post-id="13831778" class="post-view-count">阅读(240)</span> 
+<span data-post-id="13831778" class="post-comment-count">评论(7)</span> 
+<span data-post-id="13831778" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13831778" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13761211">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/10/02.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/Diary_10.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        Diary（2020十月 CSP赛前集训）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13761211">
+摘要：            
+<img src="https://images.cnblogs.com/cnblogs_com/rui-4825/1815157/o_20072800545417.bmp" class="desc_img"> $\Huge 0$        <a href="https://www.cnblogs.com/rui-4825/p/Diary_10.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-10-02 13:55
+Gary_818
+<span data-post-id="13761211" class="post-view-count">阅读(411)</span> 
+<span data-post-id="13761211" class="post-comment-count">评论(27)</span> 
+<span data-post-id="13761211" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13761211" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13596716">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/09/01.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/Diary_9.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        Diary（2020九月 半集训）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13596716">
+摘要：            
+<img src="https://images.cnblogs.com/cnblogs_com/rui-4825/1815157/o_2007280052594.bmp" class="desc_img">结束++        <a href="https://www.cnblogs.com/rui-4825/p/Diary_9.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-09-01 16:03
+Gary_818
+<span data-post-id="13596716" class="post-view-count">阅读(281)</span> 
+<span data-post-id="13596716" class="post-comment-count">评论(13)</span> 
+<span data-post-id="13596716" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13596716" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13443998">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/08/06.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/music.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        Music
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13443998">
+摘要：            
+<img src="https://images.cnblogs.com/cnblogs_com/rui-4825/1815157/o_201003064133timg.bmp" class="desc_img">  网抑云         <a href="https://www.cnblogs.com/rui-4825/p/music.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-08-06 06:24
+Gary_818
+<span data-post-id="13443998" class="post-view-count">阅读(601)</span> 
+<span data-post-id="13443998" class="post-comment-count">评论(4)</span> 
+<span data-post-id="13443998" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13443998" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day pinned" role="article" aria-describedby="postlist_description_13300425">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/07/14.html"></a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle pinned-post" href="https://www.cnblogs.com/rui-4825/p/Diary.html">
+    <span>
+            <span class="pinned-post-mark">[置顶]</span>
+        Diary （2020暑期集训日记&amp;总结）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13300425">
+摘要：            
+结束了~        <a href="https://www.cnblogs.com/rui-4825/p/Diary.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-07-14 17:54
+Gary_818
+<span data-post-id="13300425" class="post-view-count">阅读(1431)</span> 
+<span data-post-id="13300425" class="post-comment-count">评论(130)</span> 
+<span data-post-id="13300425" class="post-digg-count">推荐(7)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13300425" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_16890760">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2022/11/14.html">2022年11月14日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/16890760.html">
+    <span>
+        2022级信息工程学院《C语言程序设计》阶段1考试
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_16890760">
+摘要：            
+Problem A: 七进制转换 Solution 要认真读题的题 正经讲过无数次的进制转换，不断取mod做除法 判断素数，$2$ ~ $\sqrt {n}$有能除尽的是合数，否则是质数 注意审题，“在此将$1$视作素数”，瞪眼一个小时看到这句话，我想给出题人两个大逼斗 code int Sum_S        <a href="https://www.cnblogs.com/rui-4825/p/16890760.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2022-11-14 22:34
+Gary_818
+<span data-post-id="16890760" class="post-view-count">阅读(73)</span> 
+<span data-post-id="16890760" class="post-comment-count">评论(1)</span> 
+<span data-post-id="16890760" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=16890760" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_16871059">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2022/11/08.html">2022年11月8日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/16871059.html">
+    <span>
+        2021级信息工程学院《C语言程序设计》阶段1考试
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_16871059">
+摘要：            
+Problem A: 十六进制字符个数统计 Solution 每个数字转16进制，逐位判断即可 Code #include &lt;stdio.h&gt; int ans; void check(int n){ while(n){ int tmp = n % 16; if(tmp &gt;= 10 &amp;&amp; tmp &lt;=        <a href="https://www.cnblogs.com/rui-4825/p/16871059.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2022-11-08 20:18
+Gary_818
+<span data-post-id="16871059" class="post-view-count">阅读(56)</span> 
+<span data-post-id="16871059" class="post-comment-count">评论(2)</span> 
+<span data-post-id="16871059" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=16871059" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_14091244">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/12/05.html">2020年12月5日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/14091244.html">
+    <span>
+        NOIp2020AFO记
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14091244">
+摘要：            
+未来可期~        <a href="https://www.cnblogs.com/rui-4825/p/14091244.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-12-05 21:36
+Gary_818
+<span data-post-id="14091244" class="post-view-count">阅读(222)</span> 
+<span data-post-id="14091244" class="post-comment-count">评论(0)</span> 
+<span data-post-id="14091244" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14091244" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_14055386">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/29.html">2020年11月29日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/14055386.html">
+    <span>
+        蛋糕（区间DP）+东方记者（普通DP）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14055386">
+摘要：            
+两道DP小结        <a href="https://www.cnblogs.com/rui-4825/p/14055386.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-29 08:13
+Gary_818
+<span data-post-id="14055386" class="post-view-count">阅读(117)</span> 
+<span data-post-id="14055386" class="post-comment-count">评论(1)</span> 
+<span data-post-id="14055386" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14055386" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_14026892">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/23.html">2020年11月23日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/14026892.html">
+    <span>
+        随机化的正确打开方式
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14026892">
+摘要：            
+随机化的正确打开方式        <a href="https://www.cnblogs.com/rui-4825/p/14026892.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-23 20:38
+Gary_818
+<span data-post-id="14026892" class="post-view-count">阅读(364)</span> 
+<span data-post-id="14026892" class="post-comment-count">评论(3)</span> 
+<span data-post-id="14026892" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14026892" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_14013208">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/20.html">2020年11月20日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/14013208.html">
+    <span>
+        联赛模拟测试34
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14013208">
+摘要：            
+A.666 B.春思 C.密州盛宴 D.赤壁情        <a href="https://www.cnblogs.com/rui-4825/p/14013208.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-20 21:45
+Gary_818
+<span data-post-id="14013208" class="post-view-count">阅读(75)</span> 
+<span data-post-id="14013208" class="post-comment-count">评论(1)</span> 
+<span data-post-id="14013208" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14013208" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_14006590">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/19.html">2020年11月19日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/14006590.html">
+    <span>
+        联赛模拟测试33
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_14006590">
+摘要：            
+A.合并集合 B.ZYB建围墙 C.ZYB和售货机 D.ZYB玩字符串        <a href="https://www.cnblogs.com/rui-4825/p/14006590.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-19 16:56
+Gary_818
+<span data-post-id="14006590" class="post-view-count">阅读(102)</span> 
+<span data-post-id="14006590" class="post-comment-count">评论(1)</span> 
+<span data-post-id="14006590" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=14006590" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_13983295">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/16.html">2020年11月16日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/13983295.html">
+    <span>
+        [HNOI2007]紧急疏散EVACUATE（网络最大流+二分答案+BFS）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13983295">
+摘要：            
+题目描述 发生了火警，所有人员需要紧急疏散！假设每个房间是一个N M的矩形区域。每个格子如果是&#39;.&#39;，那么表示这是一块空地；如果是&#39;X&#39;，那么表示这是一面墙，如果是&#39;D&#39;，那么表示这是一扇门，人们可以从这儿撤出房间。已知门一定在房间的边界上，并且边界上不会有空地。最初，每块空地上都有一个人，在疏散的        <a href="https://www.cnblogs.com/rui-4825/p/13983295.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-16 07:10
+Gary_818
+<span data-post-id="13983295" class="post-view-count">阅读(141)</span> 
+<span data-post-id="13983295" class="post-comment-count">评论(1)</span> 
+<span data-post-id="13983295" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13983295" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+<div class="day" role="article" aria-describedby="postlist_description_13965281">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/rui-4825/archive/2020/11/12.html">2020年11月12日
+</a>
+    </div>
+
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/13965910.html">
+    <span>
+        [NOI2006]最大获利（网络最大流+最小割）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13965910">
+摘要：            
+题目描述 新的技术正冲击着手机通讯市场，对于各大运营商来说，这既是机遇，更是挑战。THU集团旗下的CS&amp;T通讯公司在新一代通讯技术血战的前夜，需要做太多的准备工作，仅就站址选择一项，就需要完成前期市场研究、站址勘测、最优化等项目。在前期市场调查和站址勘测之后，公司得到了一共N个可以作为通讯信号中转站        <a href="https://www.cnblogs.com/rui-4825/p/13965910.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-12 19:55
+Gary_818
+<span data-post-id="13965910" class="post-view-count">阅读(94)</span> 
+<span data-post-id="13965910" class="post-comment-count">评论(1)</span> 
+<span data-post-id="13965910" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13965910" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle" role="heading" aria-level="2">
+            <a class="postTitle2 vertical-middle" href="https://www.cnblogs.com/rui-4825/p/13965281.html">
+    <span>
+        [ICPC-Beijing 2006]狼抓兔子（网络最大流+最短路）
+    </span>
+    
+</a>
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc" id="postlist_description_13965281">
+摘要：            
+题目描述 现在小朋友们最喜欢的&quot;喜羊羊与灰太狼&quot;,话说灰太狼抓羊不到，但抓兔子还是比较在行的，而且现在的兔子还比较笨，它们只有两个窝，现在你做为狼王，面对下面这样一个网格的地形： 左上角点为 (1,1), 右下角点为 (N,M) (上图中 N=3, M=4).有以下三种类型的道路: \((x,y)⇌        <a href="https://www.cnblogs.com/rui-4825/p/13965281.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-11-12 18:00
+Gary_818
+<span data-post-id="13965281" class="post-view-count">阅读(113)</span> 
+<span data-post-id="13965281" class="post-comment-count">评论(0)</span> 
+<span data-post-id="13965281" class="post-digg-count">推荐(0)</span> 
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13965281" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/rui-4825/?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+<script>
+    updatePostStats(
+        $(".post-view-count").map(function () { return this.dataset.postId }).get(),
+        function(id, count) { $(".post-view-count[data-post-id=" + id + "]").text("阅读(" + count + ")") },
+        function(id, count) { $(".post-comment-count[data-post-id=" + id + "]").text("评论(" + count + ")") },
+        function(id, count) { $(".post-digg-count[data-post-id=" + id + "]").text("推荐(" + count + ")") });
+</script>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem">
+    <h3 class="catListTitle">公告</h3>
+<div id="blog-news">    
+    <div id="sidebar_news_content">
+    </div>
+</div>
+<script>loadBlogNews();</script>
+
+ 
+</div>
+<div id="sidebar_c3"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2023 Gary_818
+<br /><span id="poweredby">Powered by .NET 7.0 on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+
+    <div id="page_end_html">
+        <script src="https://files-cdn.cnblogs.com/files/rui-4825/clipboard.min.js"></script>
+<script src="https://files-cdn.cnblogs.com/files/rui-4825/cp.js"></script>
+
+<!--雪花特效-->
+
+<div class="Snow">
+
+    <canvas id="Snow"></canvas>
+
+</div>
+
+<script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+
+<!--雪花特效到此-->
+
+    </div>
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8M-opqJn5c1MsCC_BxLIULnaSzDXS7kkOKGIablA4hAvTuixueOFi48y4FMw11I0CM48eb6MEgDD1-BoVgEROuKpFihPqgW4c4-yV67l98U8NbOkVZ1rc2DfjXWkg0lJy0_I_NiXw-z4QHLaHw5HUH_ttG54Xxz833sEjnt4C2rK__2mHKWzV-z7hddGQqiZ_Q" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-476124-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var kv = getGACustom();
+    if (kv) {
+        gtag('set', kv);
+    }
+    gtag('config', 'UA-476124-1');
+</script>
+<script defer src="https://hm.baidu.com/hm.js?866c9be12d4a814454792b1fd0fed295"></script>
+</body>
+</html>
